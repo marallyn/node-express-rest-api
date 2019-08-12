@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "lib": ["dom", "es6"],
+    "listEmittedFiles": true,
+    "listFiles": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "build",
+    "paths": {
+      "*": ["node_modules/*"]
+    },
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6",
+    "types": ["node"],
+    "typeRoots": ["node_modules/@types"],
+    "watch": true
+  },
+  "include": ["./src/**/*.ts"]
+}

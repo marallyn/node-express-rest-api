@@ -1,0 +1,27 @@
+{
+  "name": "ns8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "prebuild-dev": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build-dev": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "start-dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^15.1.0",
+    "express": "^4.17.1",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/hapi__joi": "^15.0.3",
+    "@types/node": "^12.7.1"
+  }
+}
